@@ -1,0 +1,260 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --charcole: #363D45;
+    --light-blue: #90B0D7;
+    --red: #F1414A;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-blue);
+}
+
+h3 {
+    border-left: 8px solid var(--red);
+    padding-left: 8px;
+}
+
+h4 {
+    color: var(--charcole);
+    font-weight: 400;
+}
+
+header {
+    background-color: black;
+    color: var(--white);
+    display: flex;
+}
+
+section {
+    margin-bottom: 48px;
+}
+
+.content {
+    width: 60%;
+    margin-left: 20%;
+    padding: 16px;
+}
+
+.two-columns {
+    display: flex;
+    border-top: 1px solid lightgrey;
+}
+
+.column-large {
+    flex-basis: 70%;
+    padding-right: 48px;
+}
+
+.column-small {
+    padding-left: 48px;
+    border-left: 1px solid lightgray;
+    flex-basis: 30%;
+}
+
+header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+header ul i{
+    margin-right: 8px;
+    font-size: 1.4rem;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header h2 {
+    color: var(--light-blue);
+    font-weight: 400;
+    margin-top: 0;
+}
+
+span.big-letter {
+    font-size: 3rem;
+}
+
+.personal-statement {
+    margin-top: 40px;
+}
+
+.personal {
+    font-size: 0.9rem;
+}
+
+ul.acheivement-list {
+    font-weight: 400;
+    font-size: 0.9rem;
+    list-style: initial;
+    margin-left: 16px;
+    margin-bottom: 40px;
+}
+
+ul.skills-list {
+    font-weight: 400;
+    font-size: 0.9rem;
+    list-style: initial;
+    margin-left: 16px;
+    margin-bottom: 40px;
+}
+
+.acheivement-list li {
+    margin-bottom: 16px;
+}
+
+footer {
+    background-color: black;
+    color: var(--white);
+    padding: 16px;
+}
+
+footer ul {
+    display: flex;
+    gap: 32px;
+    margin: 16px;
+}
+
+footer li {
+    display: flex;
+    align-items: center;
+}
+
+footer li i {
+    margin-right: 8px;
+}
+
+footer .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 800px){
+    .content {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    header .content{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .two-columns {
+        flex-direction: column;
+    }
+
+    .column-small {
+        padding-left: 0;
+        border-left: none;
+        flex-basis: 30%;
+    }
+
+    .personal {
+        font-size: 1rem;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .half {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    header .content{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .two-columns {
+        flex-direction: column;
+    }
+
+    .column-small {
+        padding-left: 0;
+        border-left: none;
+        flex-basis: 30%;
+    }
+
+    .personal {
+        font-size: 1rem;
+    }
+}
+
+@media print {
+    .content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    header .content{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .two-columns {
+        flex-direction: column;
+    }
+
+    .column-small {
+        padding-left: 0;
+        border-left: none;
+        flex-basis: 30%;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .personal-statement {
+        margin-top: 0;
+    }
+
+    .personal {
+        font-size: 1rem;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .half {
+        flex-basis: 50%;
+    }
+}
